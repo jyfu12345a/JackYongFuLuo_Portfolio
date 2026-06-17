@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JackYongFu Luo Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- This links the html sheet to the style file -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- This links the html sheet to the mediaqueries file -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img
+        id="logo_icon"
+        class="icon"
+        src="./assets/logo_light_png.png"
+        src-light="./assets/logo_light_png.png"
+        src-dark="./assets/logo_dark_png.png"
+        alt="JYFU Logo"
+        onclick="location.href='./#desktop-nav'">
+      </div>
+      <!-- This creates a logo with our name in it -->
+      <div>
+        <ul class="nav-links">
+          <!-- unordered list -->
+          <li><a href="#about">About</a></li>
+          <!-- A list that allows us to navigate to each section -->
+          <li><a href="#experience">Experience</a></li>
+          <!-- If you press Shift + Alt + Arrow Key (Down) to duplicate lines -->
+          <li><a href="#projects">Projects</a></li>
+          <!-- If you press Shift + Alt + A, you can comment highlighted code -->
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img 
+            id="modeToggle" 
+            class="icon color-icon" 
+            src="./assets/theme_light.png" 
+            src-light="./assets/theme_light.png" 
+            src-dark="./assets/theme_dark.png" 
+            alt="Colour Theme Icon">
+          </li>
+          <!-- ^^^ The normal src is default on initial launch, then we want to be able to switch from light and dark, in addition to target our icon, we will use a unique identifier through its own id modeToggle. A class is also used to style it. -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img
+        id="logo_icon"
+        class="icon"
+        src="./assets/logo_light_png.png"
+        src-light="./assets/logo_light_png.png"
+        src-dark="./assets/logo_dark_png.png"
+        alt="JYFU Logo"
+        onclick="location.href='./#desktop-nav'">
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <!-- The onlick is a function that lets us use javascript to make the hamburger menu interactive when users click -->
+          <span></span>
+          <!-- The lines of the hamburger menu -->
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <!-- These will be the actual links that are going to be open when we open with this function -->
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <!-- The onclick is used here to close the menu whenever we click on the different links as well -->
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <!-- id can only be used once -->
+            <img 
+            id="modeToggle2" 
+            class="icon color-icon" 
+            src="./assets/theme_light.png" 
+            src-light="./assets/theme_light.png" 
+            src-dark="./assets/theme_dark.png" 
+            alt="Colour Theme Icon">
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Jack Luo profile picture"/>
+      </div>
+      <div class="section__text">
+        <!-- <p class="section__text__p1">Hello, I'm</p> -->
+        <!-- <h1 class="title">Jack Luo</h1>
+        <p class="section__text__p2">UX/UI Designer</p> -->
+        <p class="title section_align">Jack Luo is a Vancouver-based user experience and product designer</p>
+        <p class="section__text__p2 section_align">With a background in Interactive Arts and Technology from Simon Fraser University, I approach design as a form of purposeful communication.</p>
+        <p class="section__text__p2 section_align">Today, I’m excited by the challenge of shaping ideas into meaningful digital experiences: Designing products that not only look good, but also intuitive, useful, and thoughtfully made for the people who use them.</p>
+        <br><br>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/my_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- onclick window targets the whole window -->
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">CISM Newcomer Resource Guide 2026</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='project_1.html'"
+                >
+                  Explore
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://mag.mycism.com/newcomer/'"
+                >
+                  View Product
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Reimagine Monkeypaw Productions' Platform</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='project_2.html'"
+                >
+                  Explore
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='project_2.html#monkeypaw-video'"
+                >
+                  Product Video
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">FRIJ: Helping You Manage and Reduce Food Waste</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='project_3.html'"
+                >
+                  Explore
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='project_3.html#frij-video'"
+                >
+                  Product Video
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          src-light="./assets/arrow.png"
+          src-dark="./assets/arrow_invert.png"
+          alt="Arrow Icon"
+          class="icon arrow"
+          onclick="location.href='./#about'"
+        />
+      </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Umeda Sky Building"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <!-- The ./ allows us to go into the asset folder -->
+              <h3>
+                Education
+                <img
+                src="./assets/education.png"
+                src-light="./assets/education.png"
+                src-dark="./assets/education_invert.png"
+                alt="Education icon"
+                class="icon"
+              />
+              </h3>
+              <br>
+              <p class="aboutme_text">B.A. Bachelors Degree<br /></p>
+              <p class="aboutme_text">Major in Interactive Arts and Technology<br /></p>
+              <p class="aboutme_text">Certificate in Innovation and Entrepreneurship</p>
+            </div>
+            <div class="details-container">
+              <!-- The ./ allows us to go into the asset folder -->
+              <h3>
+                Volunteer
+                <img
+                src="./assets/experience.png"
+                src-light="./assets/experience.png"
+                src-dark="./assets/experience_invert.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              </h3>
+              <br>
+              <p class="aboutme_text"><strong>VP of Design</strong> @ SFU Surrey Badminton (1.5 Years)</p>
+              <p class="aboutme_text"><strong>External Relations Coordinator</strong> @ SFU K.Storm (1 Year)</p>
+              <!-- the br is a break to go to a new line -->
+            </div>
+          </div>
+          <div class="text-container">
+            <p class="aboutme_text">
+              Hi, I’m <strong>Jack!</strong> I was born in the Fiji Islands and later moved to Canada, where I first discovered my passion for information and web design back in high school. That spark led me to pursue Interactive Arts and Technology at Simon Fraser University, focusing on UX/UI design.
+            </p> <br><br>
+            <p class="aboutme_text">
+              <strong>Outside of design</strong>, I love making new friends and staying active through basketball, badminton, and hiking. I’m also an avid traveler, always inspired by the cultures and landscapes I encounter around the world. <strong>In my downtime</strong>, you can find me gaming on my desktop, catching up with friends and family, or trying out new food spots in the city!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        src-light="./assets/arrow.png"
+        src-dark="./assets/arrow_invert.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+      </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills & Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Hard Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Digital Marketing</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Graphic Design</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Content Strategy & UX</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>User Research & Testing</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Interaction Design</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>User Flows</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Wireframing & Mockups</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prototyping</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Visual Design</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Programming Language</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Design Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Illustrator</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Photoshop</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe InDesign</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Premiere Pro</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe After Effects</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Davinci Resolve</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Protopie</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Capcut</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Workspace</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Office</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MailerLite</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FlipHTML5</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Trello</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Notion</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML / CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WordPress</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Notion</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  src-light="./assets/checkmark.png"
+                  src-dark="./assets/checkmark_invert.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Slack</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        src-light="./assets/arrow.png"
+        src-dark="./assets/arrow_invert.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+  
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            src-light="./assets/email.png"
+            src-dark="./assets/email_invert.png"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:jack-luo123@hotmail.com">jack-luo123@hotmail.com</a>
+          </p>
+          <!-- The mailto:exampleemail@gmail.com is an in-built feature in html that opens up the user's email -->
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            src-light="./assets/linkedin.png"
+            src-dark="./assets/linkedin_invert.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/jack-yong-fu-luo/'"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/jack-luo-24568423a/">LinkedIn</a>
+          </p>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <div class="logo">
+              <img
+              id="logo_icon"
+              class="icon"
+              src="./assets/logo_light_png.png"
+              src-light="./assets/logo_light_png.png"
+              src-dark="./assets/logo_dark_png.png"
+              alt="JYFU Logo"
+              onclick="location.href='./#desktop-nav'">
+            </div>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jack Luo. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- This links the html sheet to the script file -->
+  </body>
+</html>

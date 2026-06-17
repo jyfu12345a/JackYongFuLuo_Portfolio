@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JackYongFu Luo Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- This links the html sheet to the style file -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- This links the html sheet to the mediaqueries file -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img
+          id="logo_icon"
+          class="icon"
+          src="./assets/logo_light_png.png"
+          src-light="./assets/logo_light_png.png"
+          src-dark="./assets/logo_dark_png.png"
+          alt="JYFU Logo"
+          onclick="location.href = './#desktop-nav'"
+        />
+      </div>
+      <!-- This creates a logo with our name in it -->
+      <div>
+        <ul class="nav-links">
+          <!-- unordered list -->
+          <li><a href="index.html#about">About</a></li>
+          <!-- A list that allows us to navigate to each section -->
+          <li><a href="index.html#experience">Experience</a></li>
+          <!-- If you press Shift + Alt + Arrow Key (Down) to duplicate lines -->
+          <li><a href="index.html#projects">Projects</a></li>
+          <!-- If you press Shift + Alt + A, you can comment highlighted code -->
+          <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Colour Theme Icon"
+            />
+          </li>
+          <!-- ^^^ The normal src is default on initial launch, then we want to be able to switch from light and dark, in addition to target our icon, we will use a unique identifier through its own id modeToggle. A class is also used to style it. -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img
+          id="logo_icon"
+          class="icon"
+          src="./assets/logo_light_png.png"
+          src-light="./assets/logo_light_png.png"
+          src-dark="./assets/logo_dark_png.png"
+          alt="JYFU Logo"
+          onclick="location.href = './#desktop-nav'"
+        />
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <!-- The onlick is a function that lets us use javascript to make the hamburger menu interactive when users click -->
+          <span></span>
+          <!-- The lines of the hamburger menu -->
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <!-- These will be the actual links that are going to be open when we open with this function -->
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <!-- The onclick is used here to close the menu whenever we click on the different links as well -->
+          <li>
+            <a href="index.html#experience" onclick="toggleMenu()"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="index.html#projects" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+          <li>
+            <!-- id can only be used once -->
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Colour Theme Icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="monkeypaw-project-page" class="cism-case-study">
+      <div class="cism-container">
+        <a class="cism-back-link" href="index.html#projects"
+          >&#8592; Back to projects</a
+        >
+      </div>
+
+      <div class="cism-container cism-hero">
+        <div class="cism-hero-copy">
+          <p class="cism-eyebrow">
+            UX Strategy • Website Redesign • Digital Brand Experience
+          </p>
+          <h1>Monkeypaw Productions</h1>
+          <p class="cism-hero-description">
+            Enhancing the post-film experience through a desktop website
+            redesign that helps fans explore film themes, director insights,
+            cast stories, and cultural impact.
+          </p>
+          <div class="cism-cta-row">
+            <a class="btn btn-color-1 cism-btn" href="#monkeypaw-video"
+              >View Prototype</a
+            >
+            <a class="btn btn-color-2 cism-btn" href="#monkeypaw-process"
+              >View Process</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="cism-hero-visual"
+          aria-label="Hero visual placeholder for the Monkeypaw Productions website redesign"
+        >
+          <img
+            src="./assets/project-2.png"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+      </div>
+
+      <div class="cism-container">
+        <div class="cism-project-snapshot" aria-label="Project snapshot">
+          <div>
+            <span>Role</span>
+            <strong>UX/UI Designer, Researcher, Visual Designer</strong>
+          </div>
+          <div>
+            <span>Team</span>
+            <strong
+              >Jack Luo, Lynnsey Ong, Owen Chan, Claire Lovan, Nanop
+              Yansomboon</strong
+            >
+          </div>
+          <div>
+            <span>Course</span>
+            <strong>User Experience Design, Simon Fraser University</strong>
+          </div>
+          <div>
+            <span>Project Type</span>
+            <strong
+              >Website Redesign, UX Strategy, Digital Brand Experience</strong
+            >
+          </div>
+          <div>
+            <span>Timeline & Skills</span>
+            <strong
+              >5-week design sprint • UX research, IA, prototyping, user
+              testing</strong
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-intro-grid">
+        <div>
+          <p class="cism-section-label">Project Overview</p>
+          <h2>
+            Creating a deeper digital touchpoint for fans after watching a film.
+          </h2>
+        </div>
+        <div class="cism-rich-text">
+          <p>
+            Monkeypaw Productions is known for creating films that use horror,
+            science fiction, and social satire to explore complex social themes.
+            For this senior-level UX design project, our team redesigned part of
+            Monkeypaw’s digital experience to help fans continue engaging with a
+            film after watching it.
+          </p>
+          <p>
+            Our concept focused on improving the post-film experience through a
+            redesigned desktop website that centralizes official content,
+            highlights social themes, showcases cast and director insights, and
+            encourages fans to further explore Monkeypaw’s cinematic world.
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="monkeypaw-video"
+        class="cism-container cism-section cism-media-banner"
+      >
+        <div class="cism-media-copy">
+          <p class="cism-section-label">Final Prototype Video</p>
+          <h2>Redesigned post-film journey in motion.</h2>
+          <p>
+            This final prototype video demonstrates our redesigned Monkeypaw
+            Productions experience, showing how users move from the production
+            landing page into film-specific content, social theme analysis, cast
+            recognition, and additional film discovery.
+          </p>
+        </div>
+        <div class="cism-browser-placeholder cism-video-frame">
+          <div class="cism-browser-top">
+            <span></span><span></span><span></span>
+          </div>
+          <video
+            class="cism-process-video"
+            controls
+            preload="metadata"
+            aria-label="Monkeypaw Productions final prototype video"
+          >
+            <source src="./assets/FinalPrototype.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-two-column">
+        <div class="cism-card cism-text-card">
+          <p class="cism-section-label">The Challenge</p>
+          <h2>
+            Fans were leaving the official website to understand the films
+            elsewhere.
+          </h2>
+          <p>
+            Monkeypaw films often spark discussion because of their layered
+            symbolism, social commentary, and unconventional storytelling.
+            However, after watching a film, many fans turn to Reddit, YouTube,
+            or external articles to better understand the film’s meaning.
+          </p>
+          <p>
+            Our challenge was to design a digital experience that would help
+            fans understand, appreciate, and continue engaging with Monkeypaw
+            films while staying within the official brand ecosystem.
+          </p>
+        </div>
+        <div class="cism-card cism-goals-card">
+          <p class="cism-section-label">Problem Statement</p>
+          <h2>How might we deepen fans’ appreciation after watching?</h2>
+          <p>
+            How might we encourage fans to engage with Monkeypaw’s official
+            website, enabling them to develop a deeper understanding of the
+            film’s social themes in order to reinforce Monkeypaw’s brand values
+            and deepen fans’ appreciation of the film?
+          </p>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section">
+        <div class="cism-section-heading">
+          <p class="cism-section-label">Understanding the Brand</p>
+          <h2>Three brand values guided our redesign direction.</h2>
+          <p>
+            We wanted the website to feel purposeful and connected to
+            Monkeypaw’s larger mission, rather than becoming a generic film
+            information page.
+          </p>
+        </div>
+        <div class="cism-process-steps">
+          <div>
+            <span>01</span>
+            <h3>Unpacking Social Commentaries</h3>
+            <p>
+              Using storytelling to explore complex social issues and provoke
+              discussion.
+            </p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Engaging Fans & Viewers</h3>
+            <p>
+              Extending audience conversations through meaningful digital
+              touchpoints.
+            </p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Amplifying Underrepresented Voices</h3>
+            <p>
+              Highlighting diverse storytellers, actors, and perspectives in
+              film.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-split-showcase">
+        <div class="cism-showcase-visual cism-workflow-placeholder">
+          <div class="cism-mini-board">
+            <div>
+              <span>Post-Film Search</span>
+              <p>YouTube analysis</p>
+              <p>Reddit discussions</p>
+            </div>
+            <div>
+              <span>Opportunity</span>
+              <p>Official content hub</p>
+              <p>Film-first exploration</p>
+            </div>
+            <div>
+              <span>Desired Outcome</span>
+              <p>Deeper appreciation</p>
+              <p>Stronger brand engagement</p>
+            </div>
+          </div>
+          <img
+            src="./assets/mp_customerjourney.JPG"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+        <div class="cism-rich-text">
+          <p class="cism-section-label">Research & Insights</p>
+          <h2>
+            Fans were already searching for interpretation after watching.
+          </h2>
+          <p>
+            Our research showed that fans often seek explanations after watching
+            Monkeypaw films, especially when interpreting complex endings,
+            symbolic scenes, or broader social commentary.
+          </p>
+          <p>
+            We identified YouTube and Reddit as major post-film touchpoints.
+            This revealed an opportunity for Monkeypaw’s official website to
+            become a more credible and centralized source for film meaning,
+            director intent, cast stories, and cultural impact.
+          </p>
+        </div>
+      </div>
+
+      <div id="monkeypaw-process" class="cism-container cism-section">
+        <div class="cism-section-heading">
+          <p class="cism-section-label">Design Process</p>
+          <h2>From brand research to a refined post-film experience.</h2>
+          <p>
+            Our process moved through research, framing, ideation, prototyping,
+            user testing, and refinement.
+          </p>
+        </div>
+        <div class="cism-process-steps">
+          <div>
+            <span>01</span>
+            <h3>Research</h3>
+            <p>
+              Analyzed Monkeypaw’s current website, brand values, and fan
+              behaviour.
+            </p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Frame</h3>
+            <p>
+              Mapped the customer journey and identified the post-film stage.
+            </p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Ideate</h3>
+            <p>
+              Explored social theme pages, timelines, film breakdowns, and cast
+              profiles.
+            </p>
+          </div>
+          <div>
+            <span>04</span>
+            <h3>Test</h3>
+            <p>Validated the initial prototype with Monkeypaw film viewers.</p>
+          </div>
+          <div>
+            <span>05</span>
+            <h3>Refine</h3>
+            <p>
+              Shifted the experience toward a film-first, more immersive
+              structure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-two-column">
+        <div class="cism-card cism-text-card">
+          <p class="cism-section-label">Early Concept</p>
+          <h2>Starting with social themes and historical context.</h2>
+          <p>
+            Our initial concept focused heavily on social justice themes and
+            historical context. Users could choose a theme, such as racial
+            injustice or dehumanization, and then view historical events
+            connected to specific scenes from Monkeypaw films.
+          </p>
+          <p>
+            Although the concept had strong educational value, testing showed
+            that it felt too separate from the actual films.
+          </p>
+        </div>
+        <div class="cism-card cism-goals-card">
+          <p class="cism-section-label">User Testing Findings</p>
+          <ul class="cism-check-list">
+            <li>
+              The connection to the film appeared too late in the experience.
+            </li>
+            <li>
+              The timeline structure made the film connection feel unclear.
+            </li>
+            <li>The merchandise section felt forced and disconnected.</li>
+            <li>
+              The prototype was interesting, but not emotionally compelling
+              enough.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-media-banner">
+        <div class="cism-media-copy">
+          <p class="cism-section-label">Refined Direction</p>
+          <h2>Re-centering the experience around the film.</h2>
+          <p>
+            Based on testing, we redesigned the flow so fans could start with a
+            Monkeypaw film and then explore the themes, scenes, cast, director
+            insights, and impact connected to that specific film.
+          </p>
+        </div>
+        <div class="cism-browser-placeholder">
+          <div class="cism-browser-top">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="cism-browser-content">
+            <img
+              src="./assets/mp_userflow.JPG"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section">
+        <div class="cism-section-heading">
+          <p class="cism-section-label">Final Solution</p>
+          <h2>
+            A desktop website redesign built around immersive storytelling.
+          </h2>
+          <p>
+            The final prototype enhances Monkeypaw’s post-film experience
+            through structured content, cinematic visuals, and clearer pathways
+            into deeper film exploration.
+          </p>
+        </div>
+        <div class="cism-design-grid">
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-cover-thumb">
+              <img
+                src="./assets/mp_landingpage.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3>Film Catalogue</h3>
+            <p>
+              A cinematic entry point for browsing Monkeypaw productions and
+              selecting a film.
+            </p>
+          </div>
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-toc-thumb">
+              <img
+                src="./assets/mp_landingpage2.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3>Film Information</h3>
+            <p>
+              Synopsis, release details, trailer content, and cast information
+              for quick context.
+            </p>
+          </div>
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-spread-thumb">
+              <img
+                src="./assets/mp_socialthemes.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3>Social Themes</h3>
+            <p>
+              Scene-based themes supported by quotes, annotations, and
+              highlighted dialogue.
+            </p>
+          </div>
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-resource-thumb">
+              <img
+                src="./assets/mp_creative_intent.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3>Creative Intent</h3>
+            <p>
+              Official director-focused content that gives fans credible
+              interpretation.
+            </p>
+          </div>
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-cover-thumb">
+              <img
+                src="./assets/mp_artist_stories.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3>Artist Stories</h3>
+            <p>
+              Actor roles, interviews, accomplishments, and career impact from
+              the film.
+            </p>
+          </div>
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-toc-thumb">
+              <img
+                src="./assets/mp_brand_exploration.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3>Brand Exploration</h3>
+            <p>
+              Prompts fans to explore more Monkeypaw films and remain engaged on
+              the website.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-split-showcase cism-reverse">
+        <div class="cism-rich-text">
+          <p class="cism-section-label">Visual Design Direction</p>
+          <h2>
+            Balancing cinematic atmosphere with readable content structure.
+          </h2>
+          <p>
+            The visual direction was inspired by Monkeypaw’s existing
+            black-and-white cinematic identity. We maintained the dark,
+            atmospheric feeling of the brand while making the content structure
+            more purposeful and easier to navigate.
+          </p>
+          <p>
+            The interface uses large imagery, monochrome contrast, layered
+            overlays, and selective yellow accents to draw attention to key
+            quotes, evidence, and interpretation moments.
+          </p>
+        </div>
+        <div class="cism-showcase-visual cism-flip-placeholder">
+          <img
+            src="./assets/mp_visual_system.JPG"
+            alt="Project 2"
+            class="project-img"
+          />
+          <img
+            src="./assets/mp_landingpage.JPG"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-two-column">
+        <div class="cism-card cism-text-card">
+          <p class="cism-section-label">Design Decisions</p>
+          <h2>
+            Creating a guided experience that feels like reading through a film
+            chapter.
+          </h2>
+          <p>
+            A key design decision was to preserve Monkeypaw’s visual identity
+            while improving content clarity. We used vertical navigation to
+            divide different sections, creating an experience that feels similar
+            to reading through chapters or a screenplay.
+          </p>
+          <p>
+            Clickable annotations, subtitles, and highlighted dialogue were
+            included to help fans connect specific moments in the film to larger
+            social themes.
+          </p>
+        </div>
+        <div class="cism-card cism-goals-card">
+          <p class="cism-section-label">Value Proposition</p>
+          <ul class="cism-check-list">
+            <li>
+              Creates a stronger official touchpoint for post-film engagement.
+            </li>
+            <li>
+              Helps fans explore film meaning, director intent, cast stories,
+              and cultural impact.
+            </li>
+            <li>
+              Keeps viewers engaged within Monkeypaw’s website instead of
+              scattered third-party sources.
+            </li>
+            <li>
+              Reinforces Monkeypaw’s identity around social commentary and
+              underrepresented voices.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-reflection">
+        <p class="cism-section-label">Reflection</p>
+        <h2>Designing for both user curiosity and brand strategy.</h2>
+        <p>
+          This project taught me how UX design can support both user needs and
+          brand strategy. At first, our team focused heavily on explaining
+          social issues and historical context. Through testing, we learned that
+          users wanted the film itself to remain at the center of the
+          experience.
+        </p>
+        <p>
+          That feedback helped us shift from a content-heavy educational
+          resource to a more immersive and brand-aligned website that connects
+          film, theme, cast, and impact. This project strengthened my skills in
+          UX research, content strategy, interaction design, visual
+          storytelling, and prototyping.
+        </p>
+      </div>
+    </section>
+
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jack Luo</h1>
+        <p class="section__text__p2">UI/UX Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- onclick window targets the whole window -->
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            src-light="./assets/linkedin.png"
+            src-dark="./assets/linkedin_invert.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="
+              location.href = 'https://www.linkedin.com/in/jack-yong-fu-luo/'
+            "
+          />
+          <img
+            src="./assets/github.png"
+            src-light="./assets/github.png"
+            src-dark="./assets/github_invert.png"
+            alt="My Github profile"
+            class="icon github-icon"
+            onclick="location.href = 'https://github.com/jyfu12345a/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <div class="logo">
+              <img
+                id="logo_icon"
+                class="icon"
+                src="./assets/logo_light_png.png"
+                src-light="./assets/logo_light_png.png"
+                src-dark="./assets/logo_dark_png.png"
+                alt="JYFU Logo"
+                onclick="location.href = './#desktop-nav'"
+              />
+            </div>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jack Luo. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

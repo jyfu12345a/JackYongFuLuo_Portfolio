@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JackYongFu Luo Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- This links the html sheet to the style file -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- This links the html sheet to the mediaqueries file -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img
+          id="logo_icon"
+          class="icon"
+          src="./assets/logo_light_png.png"
+          src-light="./assets/logo_light_png.png"
+          src-dark="./assets/logo_dark_png.png"
+          alt="JYFU Logo"
+          onclick="location.href = './#desktop-nav'"
+        />
+      </div>
+      <!-- This creates a logo with our name in it -->
+      <div>
+        <ul class="nav-links">
+          <!-- unordered list -->
+          <li><a href="index.html#about">About</a></li>
+          <!-- A list that allows us to navigate to each section -->
+          <li><a href="index.html#experience">Experience</a></li>
+          <!-- If you press Shift + Alt + Arrow Key (Down) to duplicate lines -->
+          <li><a href="index.html#projects">Projects</a></li>
+          <!-- If you press Shift + Alt + A, you can comment highlighted code -->
+          <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Colour Theme Icon"
+            />
+          </li>
+          <!-- ^^^ The normal src is default on initial launch, then we want to be able to switch from light and dark, in addition to target our icon, we will use a unique identifier through its own id modeToggle. A class is also used to style it. -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img
+          id="logo_icon"
+          class="icon"
+          src="./assets/logo_light_png.png"
+          src-light="./assets/logo_light_png.png"
+          src-dark="./assets/logo_dark_png.png"
+          alt="JYFU Logo"
+          onclick="location.href = './#desktop-nav'"
+        />
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <!-- The onlick is a function that lets us use javascript to make the hamburger menu interactive when users click -->
+          <span></span>
+          <!-- The lines of the hamburger menu -->
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <!-- These will be the actual links that are going to be open when we open with this function -->
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <!-- The onclick is used here to close the menu whenever we click on the different links as well -->
+          <li>
+            <a href="index.html#experience" onclick="toggleMenu()"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="index.html#projects" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+          <li>
+            <!-- id can only be used once -->
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Colour Theme Icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="cism-project-page" class="cism-case-study">
+      <div class="cism-container">
+        <a class="cism-back-link" href="index.html#projects"
+          >&#8592; Back to projects</a
+        >
+      </div>
+
+      <div class="cism-container cism-hero">
+        <div class="cism-hero-copy">
+          <p class="cism-eyebrow">
+            Marketing Design • Digital Publication • Campaign System
+          </p>
+          <h1>CISM Newcomer Resource Guide 2026</h1>
+          <p class="cism-hero-description">
+            Designing and publishing a brand-new digital E-Magazine and
+            supporting marketing system for newcomers to Canada.
+          </p>
+          <div class="cism-cta-row">
+            <a
+              class="btn btn-color-1 cism-btn"
+              href="https://mag.mycism.com/newcomer/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Live E-Magazine</a
+            >
+            <a class="btn btn-color-2 cism-btn" href="#cism-process"
+              >View Process</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="cism-hero-visual"
+          aria-label="Hero image placeholder for the CISM Newcomer Resource Guide"
+        >
+          <img
+            src="./assets/project-1.png"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+      </div>
+
+      <div class="cism-container">
+        <div class="cism-project-snapshot" aria-label="Project snapshot">
+          <div>
+            <span>Role</span>
+            <strong>Marketing Designer</strong>
+          </div>
+          <div>
+            <span>Company</span>
+            <strong>Canada International Student Magazine</strong>
+          </div>
+          <div>
+            <span>Project Type</span>
+            <strong
+              >Digital Publication, Email Marketing, Social Campaign</strong
+            >
+          </div>
+          <div>
+            <span>Tools</span>
+            <strong
+              >Canva, FlipHTML5, MailerLite, Trello, Excel, Google Docs</strong
+            >
+          </div>
+          <div>
+            <span>Responsibilities</span>
+            <strong
+              >Publication design, layout system, campaign assets, publishing
+              workflow</strong
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-intro-grid">
+        <div>
+          <p class="cism-section-label">Project Overview</p>
+          <h2>Creating a new digital resource for newcomers to Canada.</h2>
+        </div>
+        <div class="cism-rich-text">
+          <p>
+            The CISM Newcomer Resource Guide 2026 is a digital E-Magazine
+            created to support newcomers navigating life in Canada. The
+            publication provides practical information for living, studying, and
+            settling in Canada, helping readers access useful resources in a
+            clear and approachable format.
+          </p>
+          <p>
+            As the Marketing Designer at CISM, I was assigned by the CEO to
+            design and publish this new E-Magazine edition from scratch. While
+            the company already had an existing Global E-Magazine focused on
+            educational resources, this project introduced a new product line
+            specifically designed for newcomer audiences.
+          </p>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-two-column">
+        <div class="cism-card cism-text-card">
+          <p class="cism-section-label">The Challenge</p>
+          <h2>
+            Designing a guide that could stand alone while still feeling
+            connected to CISM.
+          </h2>
+          <p>
+            CISM needed a separate digital publication focused specifically on
+            newcomers to Canada. The E-Magazine had to be practical, easy to
+            navigate, visually engaging, and suitable for readers seeking clear
+            guidance on everyday life in Canada.
+          </p>
+          <p>
+            My challenge was not only to design the publication, but to help
+            create a repeatable design and publishing workflow that could
+            support CISM’s growing E-Magazine ecosystem.
+          </p>
+        </div>
+        <div class="cism-card cism-goals-card">
+          <p class="cism-section-label">Project Goals</p>
+          <ul class="cism-check-list">
+            <li>Create a new E-Magazine edition from scratch.</li>
+            <li>
+              Develop a clear visual structure for newcomer-focused content.
+            </li>
+            <li>Design readable and organized page layouts.</li>
+            <li>Publish the final guide through FlipHTML5.</li>
+            <li>
+              Support promotion through newsletters and social media templates.
+            </li>
+            <li>
+              Create a workflow for content, design, and publishing progress.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-media-banner">
+        <div class="cism-media-copy">
+          <p class="cism-section-label">Recommended Visual</p>
+          <h2>Final Product Mockup</h2>
+          <p>Topic Selection of Newcomer Resource Guide 2026</p>
+        </div>
+        <div class="cism-browser-placeholder">
+          <div class="cism-browser-top">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="cism-browser-content">
+            <img
+              src="./assets/CISM_product_mockup.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="cism-process" class="cism-container cism-section">
+        <div class="cism-section-heading">
+          <p class="cism-section-label">Process</p>
+          <h2>From content planning to digital publishing.</h2>
+          <p>
+            I worked across planning, content organization, visual design,
+            publishing, and campaign promotion to turn the Newcomer Guide into a
+            complete digital product.
+          </p>
+        </div>
+        <div class="cism-process-steps">
+          <div>
+            <span>01</span>
+            <h3>Plan</h3>
+            <p>Organized the project through Trello, Excel, and Google Docs.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Structure</h3>
+            <p>Arranged newcomer-focused content into a clear reading flow.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Design</h3>
+            <p>
+              Created the E-Magazine layout system and publication visuals in
+              Canva.
+            </p>
+          </div>
+          <div>
+            <span>04</span>
+            <h3>Publish</h3>
+            <p>
+              Prepared and launched the interactive digital guide through
+              FlipHTML5.
+            </p>
+          </div>
+          <div>
+            <span>05</span>
+            <h3>Promote</h3>
+            <p>
+              Supported distribution through newsletters and social media
+              templates.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-split-showcase">
+        <div class="cism-showcase-visual cism-workflow-placeholder">
+          <div class="cism-mini-board">
+            <div>
+              <span>To Do</span>
+              <p>Content outline</p>
+              <p>Page planning</p>
+            </div>
+            <div>
+              <span>In Progress</span>
+              <p>Canva layouts</p>
+              <p>Newsletter build</p>
+            </div>
+            <div>
+              <span>Ready</span>
+              <p>FlipHTML5 upload</p>
+              <p>Campaign templates</p>
+            </div>
+          </div>
+          <img
+            src="./assets/canva_design.png"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <div class="cism-rich-text">
+          <p class="cism-section-label">Workflow & Project Management</p>
+          <h2>
+            A structured production workflow helped move the guide from concept
+            to launch.
+          </h2>
+          <p>
+            Trello was used to track progress, assign tasks, and communicate
+            project status with the marketing team. Microsoft Excel helped
+            organize project details, page planning, and production tracking.
+            Google Docs supported written content development and editing before
+            the content moved into the design stage.
+          </p>
+          <p>
+            Once the content was ready, I used Canva to design the publication
+            pages and create a consistent visual system. After design was
+            completed, the final E-Magazine was published through FlipHTML5 as
+            an interactive digital publication.
+          </p>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-intro-grid">
+        <div>
+          <p class="cism-section-label">Audience & Content Strategy</p>
+          <h2>Designing for clarity, accessibility, and trust.</h2>
+        </div>
+        <div class="cism-rich-text">
+          <p>
+            The primary audience for the Newcomer Resource Guide is newcomers to
+            Canada, including international students, families, and individuals
+            adjusting to a new environment. Since these readers may be
+            unfamiliar with Canadian systems and resources, the design needed to
+            make information feel approachable and not overwhelming.
+          </p>
+          <p>
+            I approached the publication as both a marketing product and an
+            information guide. Instead of treating each article as a separate
+            visual piece, I designed the guide as a connected reading experience
+            with logical sections, clear hierarchy, and layouts that support
+            quick scanning.
+          </p>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section">
+        <div class="cism-section-heading">
+          <p class="cism-section-label">E-Magazine Design System</p>
+          <h2>A cohesive publication system for different types of content.</h2>
+        </div>
+        <div class="cism-design-grid">
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-cover-thumb">
+              <img
+                src="./assets/newcomer_cover.JPG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3>Cover Design</h3>
+            <p>CISM Newcomer Resource Guide 2026 Cover Page</p>
+          </div>
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-toc-thumb">
+              <img
+                src="./assets/newcomer_spread.JPG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3>Table of Contents</h3>
+            <p>CISM Newcomer Resource Guide 2026 Topic Selection</p>
+          </div>
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-spread-thumb">
+              <img
+                src="./assets/newcomer_article.JPG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3>Article Layouts</h3>
+            <p>CISM Newcomer Resource Guide 2026 Article Spread</p>
+          </div>
+          <div class="cism-design-card">
+            <div class="cism-page-thumb cism-resource-thumb">
+              <img
+                src="./assets/newcomer_landmark.JPG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3>Resource Pages</h3>
+            <p>CISM Newcomer Resource Guide 2026 Local Landmark Section</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-split-showcase cism-reverse">
+        <div class="cism-rich-text">
+          <p class="cism-section-label">Publishing the E-Magazine</p>
+          <h2>
+            Turning a static publication into an interactive digital product.
+          </h2>
+          <p>
+            After designing the publication, I prepared and published the guide
+            through FlipHTML5. This transformed the static publication into an
+            interactive digital magazine experience that could be shared online
+            through a direct link.
+          </p>
+          <p>
+            This step was important because the project was not only about
+            designing a file, but launching a new resource that could be
+            distributed to CISM’s audience.
+          </p>
+        </div>
+        <div class="cism-showcase-visual cism-flip-placeholder">
+          <img
+            src="./assets/fliphtml5_emagazine.png"
+            alt="Project 1"
+            class="project-img"
+          />
+          <img
+            src="./assets/newcomer_article.JPG"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+      </div>
+
+      <div class="cism-container cism-section">
+        <div class="cism-section-heading">
+          <p class="cism-section-label">Marketing Ecosystem</p>
+          <h2>
+            Extending the guide through newsletter and social media campaigns.
+          </h2>
+        </div>
+        <div class="cism-campaign-grid">
+          <div class="cism-campaign-card cism-newsletter-card">
+            <span class="cism-card-tag">MailerLite</span>
+            <h3>Weekly Newsletter Design</h3>
+            <p>
+              I set up and manage CISM’s weekly email newsletter system through
+              MailerLite. This involves designing email layouts, organizing
+              content blocks, building visual hierarchy, and publishing weekly
+              campaigns.
+            </p>
+            <div class="cism-newsletter-placeholder">
+              <img
+                src="./assets/mailerlite_newsletters.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+          </div>
+          <div class="cism-campaign-card">
+            <span class="cism-card-tag">Facebook & Instagram</span>
+            <h3>E-Magazine Campaign Templates</h3>
+            <p>
+              I created social media templates for promoting CISM’s Global,
+              Newcomer, and Japanese E-Magazine editions, helping the campaign
+              remain consistent across different platforms and audiences.
+            </p>
+            <div class="cism-social-placeholder">
+              <div>
+                <img
+                  src="./assets/global.JPG"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <div>
+                <img
+                  src="./assets/nc.JPG"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <div>
+                <img
+                  src="./assets/jp.JPG"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-outcome-grid">
+        <div class="cism-card cism-text-card">
+          <p class="cism-section-label">Final Outcome</p>
+          <h2>
+            A new publication product and supporting communication system.
+          </h2>
+          <p>
+            The final outcome was a newly designed and published digital
+            E-Magazine: the CISM Newcomer Resource Guide 2026. The project
+            expanded CISM’s E-Magazine offering by introducing a
+            newcomer-focused edition that supports readers with practical
+            information about life in Canada.
+          </p>
+        </div>
+        <div class="cism-card cism-impact-card">
+          <p class="cism-section-label">Impact Metrics to Add Later</p>
+          <ul class="cism-metric-list">
+            <li>E-Magazine views</li>
+            <li>Newsletter open rate</li>
+            <li>Newsletter click rate</li>
+            <li>Social media reach</li>
+            <li>Campaign engagement</li>
+            <li>Stakeholder feedback</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cism-container cism-section cism-reflection">
+        <p class="cism-section-label">Reflection</p>
+        <h2>
+          Designing a real product within a professional marketing environment.
+        </h2>
+        <p>
+          This project gave me valuable experience balancing company goals,
+          audience needs, content organization, brand consistency, and
+          publishing deadlines. I learned how to design not just a single
+          publication, but a full communication system that connects digital
+          publishing, email marketing, and social media promotion.
+        </p>
+        <p>
+          As a marketing designer, this project reflects my ability to transform
+          content into a polished digital product while supporting a broader
+          campaign strategy across multiple communication channels.
+        </p>
+      </div>
+    </section>
+
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jack Luo</h1>
+        <p class="section__text__p2">UI/UX Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- onclick window targets the whole window -->
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            src-light="./assets/linkedin.png"
+            src-dark="./assets/linkedin_invert.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="
+              location.href = 'https://www.linkedin.com/in/jack-yong-fu-luo/'
+            "
+          />
+          <img
+            src="./assets/github.png"
+            src-light="./assets/github.png"
+            src-dark="./assets/github_invert.png"
+            alt="My Github profile"
+            class="icon github-icon"
+            onclick="location.href = 'https://github.com/jyfu12345a/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <div class="logo">
+              <img
+                id="logo_icon"
+                class="icon"
+                src="./assets/logo_light_png.png"
+                src-light="./assets/logo_light_png.png"
+                src-dark="./assets/logo_dark_png.png"
+                alt="JYFU Logo"
+                onclick="location.href = './#desktop-nav'"
+              />
+            </div>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jack Luo. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
